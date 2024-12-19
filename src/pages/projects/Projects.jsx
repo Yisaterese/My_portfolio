@@ -16,7 +16,8 @@ const ServiceModal = ({ toggleTab, toggleState, index, title, description, proje
                             <i className={`uil uil-folder ${styles.services__modal_icon}`}></i>
                             <p className={styles.services__modal_info}>
                                 {project.projectName} -{" "}
-                                <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                                <a href={project.githubLink} target="_blank"
+                                   rel="noopener noreferrer">
                                     View Project
                                 </a>
                             </p>
@@ -28,7 +29,7 @@ const ServiceModal = ({ toggleTab, toggleState, index, title, description, proje
     );
 };
 
-const ServiceContent = ({ icon, title, toggleTab, index }) => {
+const ServiceContent = ({icon, title, toggleTab, index}) => {
     return (
         <div className={styles.services__content}>
             <div>
@@ -62,12 +63,18 @@ const Projects = () => {
             icon: "uil-browser",
             projects: [
                 {
-                    projectName: "Dee Logistics System Website",
-                    githubLink: "https://deelogistics-dee-dayos-projects.vercel.app/"
+                    projectName: "E-hailing App",
+                    githubLink: "https://github.com/Yisaterese/URide"
                 },
                 {
-                    projectName: "Nexcent Landing page",
-                    githubLink: "https://nexcent-pied.vercel.app/"
+                    projectName: "Community based thrift",
+                    githubLink: "https://github.com/Yisaterese/Bondex",
+                    deployedLink:"https://bondex.com/"
+                },
+                {
+                    projectName: "Enum(Next.js)",
+                    githubLink: "https://github.com/Yisaterese/enum-task",
+                    deployedLink:"https://enum-task.onrender.com/"
                 }
             ]
         },
